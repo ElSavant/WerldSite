@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Avenir Next LTW04';
+    src: url('../fonts/AvenirNextLTW04-Light.eot');
+    src: url('../fonts/AvenirNextLTW04-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNextLTW04-Light.woff2') format('woff2'),
+        url('../fonts/AvenirNextLTW04-Light.woff') format('woff'),
+        url('../fonts/AvenirNextLTW04-Light.svg#AvenirNextLTW04-Light') format('svg');
+}
+
+@font-face {
+    font-family: 'Avenir Next Condensed';
+    src: url('../fonts/AvenirNextCondensed-Medium.eot');
+    src: url('../fonts/AvenirNextCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNextCondensed-Medium.woff2') format('woff2'),
+        url('../fonts/AvenirNextCondensed-Medium.woff') format('woff'),
+        url('../fonts/AvenirNextCondensed-Medium.svg#AvenirNextCondensed-Medium') format('svg');
+}
