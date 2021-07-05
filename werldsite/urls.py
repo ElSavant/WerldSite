@@ -20,9 +20,10 @@ from django.conf import settings
 import werldsite.views
 
 urlpatterns = [
-    path("",werldsite.views.home,name="home"),
     path('', include('services.urls')),
     path('', include('team.urls')),
     path("contact",werldsite.views.contact,name="contact"),
     path('admin/', admin.site.urls),
 ]+ static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+
+urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
