@@ -1,2 +1,36 @@
+{%extends 'base.html'%}
 
-Hi
+{%load static%}
+
+
+{%block site_description%}
+<meta name="description" content="Author: Werld Analytics,
+Site Description: Werld Analytics are expects in data curation and analysis providing detailed and excellent data analysis.">
+{%endblock%}
+
+{%block extra_css%}
+<link rel="stylesheet" type="text/css" href="{% static 'services/css/home.css' %}" />    
+{%endblock%}
+
+
+{%block content%}
+<header>
+
+</header>
+<main>
+{% for service in services.all%}
+<section class="Service">
+    <p class="photo"><img src="{{service.image.url}}" alt="{{service.name}}"></p>
+    <hr>
+    <h2>{{service.service_name}}</h2>
+    <hr>
+    <p class="description">{{service.short_description}}</p>
+    <p><a>Read more</a></p>
+</section>
+{%endfor%}
+</main>
+<aside>
+
+</aside>
+
+{%endblock%}

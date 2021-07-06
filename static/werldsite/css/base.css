@@ -1,0 +1,39 @@
+@import url('font.css');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Avenir Next Condensed',Fallback, cursive ;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    background-color: snow;
+    list-style: none; /* removes bullets */
+    padding: .5em;
+    margin: 0;
+    }
+    
+    li {
+    margin: 0 1em;
+    }
+    
+    li.logo {
+    margin-right: auto;
+    }
+
+footer{
+    font-family: 'Avenir Next LTW04', Fallback, cursive;
+    display: flex;
+    color: blanchedalmond;
+    flex-direction: row;
+    text-transform: uppercase;
+    background-color: black;
+    height: 100px;
+    clear:both;
+    }

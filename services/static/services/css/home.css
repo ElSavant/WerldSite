@@ -1,0 +1,30 @@
+section {
+    margin: 10px;
+    padding: 20px;
+    border: 1px dotted maroon;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-self: center;
+}
+
+hr{
+    color : blanchedalmond;
+}
+h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    color: rgb(224, 161, 44);
+  }
