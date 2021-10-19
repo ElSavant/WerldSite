@@ -1,24 +1,61 @@
-section {
-    margin: 10px;
-    padding: 20px;
-    border: 1px dotted maroon;
-    width: 400px;
+/* ABOUT */
+
+.about {
     display: flex;
+    justify-content: space-around;
+    margin-top: 15vh;
+}
+.box {
+    flex: 1;
+    margin: 50px;
+    height: 70vh;
+}
+.box1 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box1 h1 {
+    font-size: 25px;
+}
+.box1 p {
+    font-size: 20px;
+}
+.box1 .underline {
+    width: 50px;
+    height: 5px;
+    background-color: rgb(199, 164, 11);
+    margin-bottom: 30px;
+    margin-top: 3px;
+}
+.underline:hover {
+    width: 150px;
+    height: 2px;
+    transition: 0.3s ease-in-out;
+}
+.box2 {
+    padding: 30px;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-
-body{
-    display: flex;
-    flex-direction: column;
+.box2 p {
+    font-size: 34px;
+    text-align: center;
+}
+.box2 h5 {
+    margin: 50px;
+    color: rgb(199, 164, 11);
+}
+.box2 span {
+    font-size: 40px;
+}
+.box3 {
+    background-image: url('../../services/img/banner.jpg');
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    align-self: center;
-}
 
 hr{
     color : blanchedalmond;
@@ -26,5 +63,31 @@ hr{
 h2 {
     font-size: 1.2em;
     margin-top: 0;
-    color: rgb(224, 161, 44);
+    color: rgb(10, 10, 10);
   }
+
+.banner{
+    height: 100vh;
+    background-image: url('../../services/img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner p{
+    position: relative;
+    font-size: 2.5rem;
+    top: 45%;
+    margin-left: 10%;
+    color: white;
+    font-weight: bolder;
+    text-align: left;
+}
+.banner p span {
+    color: rgb(255, 200, 21);
+    text-transform: uppercase;
+    font-size: 4rem ;
+    font-weight: bold;
+    margin: 10px 0 20px 5px;
+}
+.banner p p {
+    margin-top: 20px;
+}

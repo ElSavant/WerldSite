@@ -14,23 +14,64 @@ Site Description: Werld Analytics are expects in data curation and analysis prov
 
 
 {%block content%}
-<header>
-
-</header>
-<main>
-{% for service in services.all%}
-<section class="Service">
-    <p class="photo"><img src="{{service.image.url}}" alt="{{service.name}}"></p>
-    <hr>
-    <h2>{{service.service_name}}</h2>
-    <hr>
-    <p class="description">{{service.short_description}}</p>
-    <p><a>Read more</a></p>
+<section class="banner">
+    <p>
+        Welcome to  <br><span>Werld Analytics</span>
+         <br> <p>Data Solutions Expert and More...</p> 
+    </p>
 </section>
-{%endfor%}
-</main>
-<aside>
 
-</aside>
+<section class="about" id="about">
+    <div class="box box1">
+        <div><h1>
+                Who We Are!
+            </h1> <div class="underline"></div>
+        </div>
+        <div><p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Maxime aut illum quam amet excepturi delectus cupiditate 
+            autem debitis atque eveniet. Minima, unde. 
+            Maxime aut illum quam amet excepturi delectus cupiditate
+            Maxime aut illum quam amet excepturi delectus cupiditate
+            Corporis suscipit quae ab cum nam. Corporis, dolores!
+        </p></div>
+        <div><a href="" class="button">Read more</a></div>
+    </div>
+    <div class="box box2">
+        <p>
+            <span>"</span> 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Reprehenderit deserunt, facere eum maiores quia et? 
+            <span>"</span> 
+        </p>
+        <h5>ALBERT EINSTEIN</h5>
+    </div>
+    <div class="box box3">
+    </div>
+</section>
+<section class="main-services">
+    <div id="services">
+        <h1 class="main-topic">
+        Some Services we offer
+        </h1>
+        <p class="sub-topic">
+            Our works are spectacular for which reason our clients
+            can not keep mute. These are some of the comments those
+            we have worked for have to say about us.
+        </p>
+    </div>
+    {% for service in services.all%}
+        <section class="Service">
+            <p class="photo"><img src="{{service.image.url}}" alt="{{service.name}}" height="200px" width="200px"></p>
+            <hr>
+            <h2>{{service.service_name}}</h2>
+            <hr>
+            <p class="description">{{service.short_description}}</p>
+            <p><a>Read more</a></p>
+        </section>
+    {%endfor%}
+</section>
+
+
 
 {%endblock%}
