@@ -1,5 +1,37 @@
 @import url('font.css');
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: snow;
+    font-family: 'Avenir Next Condensed',Fallback, cursive ;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    text-decoration: none;
+    border: 2px solid rgb(199, 164, 11);
+    padding: 10px;
+    font-size: 20px;
+}
+
+.button:hover {
+    border-radius: 30px;
+    background-color: rgb(199, 164, 11);
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+
+
 header {
     position: fixed;
     display: flex;
@@ -10,8 +42,8 @@ header {
     background-color: snow;
     width: 100vw;
     z-index: 1;
-
 }
+
 .nav-div {
     padding-right: 100px;
 }
@@ -30,54 +62,12 @@ header ul li a {
 }
 
 
-body {
-    background-color: snow;
-    font-family: 'Avenir Next Condensed',Fallback, cursive ;
-    margin: 0;
-}
-html {
-    scroll-behavior: smooth;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-
-
-ul {
-    display: flex;
-    align-items: center;
-    background-color: snow;
-    list-style: none; /* removes bullets */
-    padding: .5em;
-    margin: 0;
-    }
-    
-    li {
-    margin: 0 1em;
-    }
-    
-    li.logo {
-    margin-right: auto;
-    }
-
-    footer{
-        font-family: 'Avenir Next LTW04', Fallback, cursive;
-        display: flex;
-        color: blanchedalmond;
-        flex-direction: row;
-        text-transform: uppercase;
-        background-color: black;
-        height: 100px;
-        padding: 1em;
-        justify-content: center;
-        font-size: .8em;
-        }
+   
 
     /* FOOTER */
  .footer {
+    font-family: 'Avenir Next LTW04', Fallback, cursive;
     background-color: rgb(4, 4, 54);
     min-height: 30vh;
 }
